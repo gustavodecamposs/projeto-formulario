@@ -1,0 +1,9 @@
+body {
+    width: 100%;
+    background: linear-gradient(to right, rgb(15, 189, 219),rgb(76, 199, 168));
+}
+
+main {
+    width: 100%;
+    margin: 45%;
+}
