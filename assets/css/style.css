@@ -177,6 +177,7 @@ body {
 
     .container {
         width: 50%;
+        height: auto;
     }
 
     .form {
