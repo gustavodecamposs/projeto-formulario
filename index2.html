@@ -18,7 +18,7 @@
                         <h1>Cadastre-se</h1>
                     </div>
                     <div class="login-button">
-                        <button><a href="#">Entrar</a></button>
+                        <button type="button"><a href="#">Entrar</a></button>
                     </div>
                 </div>
                 <div class="input-group">
@@ -29,7 +29,7 @@
                     
                     <div class="input-box">
                         <label for="lastname">Sobrenome</label>
-                        <input type="text" id="lastname" name="lastname" placeholder="Digite seu Sobrenome nome" >
+                        <input type="text" id="lastname" name="lastname" placeholder="Digite seu Sobrenome" >
                     </div>
 
                     <div class="input-box">
@@ -48,8 +48,8 @@
                     </div>
 
                     <div class="input-box">
-                        <label for="Confirmpassword">Confirme sua senha</label>
-                        <input type="Confirmpassword" id="password" name="Confirmpassword" placeholder="Digite sua senha novamente" >
+                        <label for="confirmpassword">Confirme sua senha</label>
+                        <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Digite sua senha novamente" >
                     </div>
                 </div>
 
@@ -77,12 +77,11 @@
                             <input type="radio" id="none" name="gender">
                             <label for="none">Prefiro não dizer</label>
                         </div>
-                        
                     </div>
                 </div>
 
                 <div class="continue-button">
-                    <button><a href="#">Continuar</a></button>
+                    <button type="submit">Continuar</button>
                 </div>
             </form>
         </div>
@@ -90,7 +89,7 @@
 
     <script>
         document.getElementById("cadastroForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Evita envio automático
+            event.preventDefault(); // Impede envio automático do form
 
             const firstname = document.getElementById("firstname").value.trim();
             const lastname = document.getElementById("lastname").value.trim();
@@ -129,9 +128,8 @@
             }
 
             alert("Formulário enviado com sucesso!");
-            // Aqui você pode enviar o formulário com form.submit() ou fazer algo com os dados
+            // Se quiser realmente enviar, use: this.submit();
         });
     </script>
-
 </body>
 </html>
